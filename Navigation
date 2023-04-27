@@ -207,8 +207,8 @@ def plot_pcolormesh_matrix(lat_lon_matrix):
 # create the matrix of cells
 # compare the pathdfinder list points to matrix points to find the closest match
 # note the closest match and mark as placed node and do this for all points
-# run bresenham to connect the dots
-# VALIDATE : by connecting  dots and checking the distance is reasonable due to assumed linearity
+# run bresenham to connect the dots and get navigation route
+# VALIDATE : by calculating the distance and see if reasonable due to assumed linearity by bresenham 
 
 
 # test_coords = [[-96.337128, 30.622604],
