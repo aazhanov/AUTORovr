@@ -17,13 +17,11 @@ tpoint = (tlon, tlat)
 tlat2, tlon2 = 30.608673, -96.336615
 tpoint2 = (tlon2, tlat2)
 
-# case 3
+# case 3  USED FOR FINAL DEMO
 tlat, tlon = 30.61071, -96.33934
 tpoint = (tlon, tlat)
 tlat2, tlon2 = 30.62083, -96.33980
 tpoint2 = (tlon2, tlat2)
-
-
 
 start_point = tpoint
 target_point = tpoint2
@@ -32,7 +30,6 @@ target_point = tpoint2
 lat_step = 0.005
 lat_start = 30.605
 lat_end = 30.630 + lat_step
-
 lon_step = 0.0025
 lon_start = -96.3450
 lon_end = -96.3250 + lon_step
