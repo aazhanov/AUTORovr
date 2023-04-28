@@ -1,0 +1,167 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.learnandroid.ecen403capstone_final"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml
+10
+11    <!-- Include required permissions for Google Maps API to run. -->
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\natha\.gradle\caches\transforms-3\012b408f0812d4bea7da375c23bbf445\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:5-79
+12-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\natha\.gradle\caches\transforms-3\012b408f0812d4bea7da375c23bbf445\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:22-76
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\natha\.gradle\caches\transforms-3\012b408f0812d4bea7da375c23bbf445\transformed\play-services-maps-18.1.0\AndroidManifest.xml:24:5-67
+13-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\natha\.gradle\caches\transforms-3\012b408f0812d4bea7da375c23bbf445\transformed\play-services-maps-18.1.0\AndroidManifest.xml:24:22-64
+14
+15    <uses-feature
+15-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\natha\.gradle\caches\transforms-3\012b408f0812d4bea7da375c23bbf445\transformed\play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+16        android:glEsVersion="0x00020000"
+16-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\natha\.gradle\caches\transforms-3\012b408f0812d4bea7da375c23bbf445\transformed\play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+17        android:required="true" />
+17-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\natha\.gradle\caches\transforms-3\012b408f0812d4bea7da375c23bbf445\transformed\play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+18
+19    <queries>
+19-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\natha\.gradle\caches\transforms-3\012b408f0812d4bea7da375c23bbf445\transformed\play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
+20
+21        <!-- Needs to be explicitly declared on Android R+ -->
+22        <package android:name="com.google.android.apps.maps" />
+22-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\natha\.gradle\caches\transforms-3\012b408f0812d4bea7da375c23bbf445\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+22-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\natha\.gradle\caches\transforms-3\012b408f0812d4bea7da375c23bbf445\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+23    </queries>
+24
+25    <permission
+25-->[androidx.core:core:1.9.0] C:\Users\natha\.gradle\caches\transforms-3\85f6831b96cc8fa5e28ac5c8b7102421\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+26        android:name="com.learnandroid.ecen403capstone_final.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+26-->[androidx.core:core:1.9.0] C:\Users\natha\.gradle\caches\transforms-3\85f6831b96cc8fa5e28ac5c8b7102421\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+27        android:protectionLevel="signature" />
+27-->[androidx.core:core:1.9.0] C:\Users\natha\.gradle\caches\transforms-3\85f6831b96cc8fa5e28ac5c8b7102421\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+28
+29    <uses-permission android:name="com.learnandroid.ecen403capstone_final.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+29-->[androidx.core:core:1.9.0] C:\Users\natha\.gradle\caches\transforms-3\85f6831b96cc8fa5e28ac5c8b7102421\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+29-->[androidx.core:core:1.9.0] C:\Users\natha\.gradle\caches\transforms-3\85f6831b96cc8fa5e28ac5c8b7102421\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+30
+31    <application
+31-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:4:5-46:19
+32        android:allowBackup="true"
+32-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:5:9-35
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.9.0] C:\Users\natha\.gradle\caches\transforms-3\85f6831b96cc8fa5e28ac5c8b7102421\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+34        android:dataExtractionRules="@xml/data_extraction_rules"
+34-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:6:9-65
+35        android:debuggable="true"
+36        android:extractNativeLibs="false"
+37        android:fullBackupContent="@xml/backup_rules"
+37-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:7:9-54
+38        android:icon="@mipmap/ic_launcher"
+38-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:8:9-43
+39        android:label="@string/app_name"
+39-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:9:9-41
+40        android:noHistory="true"
+40-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:13:9-35
+41        android:supportsRtl="true"
+41-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:10:9-35
+42        android:testOnly="true"
+43        android:theme="@style/Theme.ECEN403capstone_final" >
+43-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:11:9-59
+44
+45        <!--
+46             TODO: Before you run your application, you need a Google Maps API key.
+47
+48             To get one, follow the directions here:
+49
+50                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+51
+52             Once you have your API key (it starts with "AIza"), define a new property in your
+53             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+54             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+55        -->
+56        <meta-data
+57            android:name="com.google.android.geo.API_KEY"
+57-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:27:13-58
+58            android:value="AIzaSyCYnKDDS82O-oP8ZdNHyAAEY41x3zn0Cwc" />
+58-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:28:13-44
+59
+60        <activity
+60-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:30:9-33:59
+61            android:name="com.learnandroid.ecen403capstone_final.MapsActivity"
+61-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:31:13-41
+62            android:exported="false"
+62-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:32:13-37
+63            android:label="@string/title_activity_maps" />
+63-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:33:13-56
+64        <activity
+64-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:34:9-36:39
+65            android:name="com.learnandroid.ecen403capstone_final.LoginActivity"
+65-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:35:13-42
+66            android:exported="true" />
+66-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:36:13-36
+67        <activity
+67-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:37:9-45:20
+68            android:name="com.learnandroid.ecen403capstone_final.MainActivity"
+68-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:38:13-41
+69            android:exported="true" >
+69-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:39:13-36
+70            <intent-filter>
+70-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:40:13-44:29
+71                <action android:name="android.intent.action.MAIN" />
+71-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:41:17-69
+71-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:41:25-66
+72
+73                <category android:name="android.intent.category.LAUNCHER" />
+73-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:43:17-77
+73-->C:\Users\natha\AndroidStudioProjects\ECEN403capstone_final\app\src\main\AndroidManifest.xml:43:27-74
+74            </intent-filter>
+75        </activity>
+76        <!-- Needs to be explicitly declared on P+ -->
+77        <uses-library
+77-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\natha\.gradle\caches\transforms-3\012b408f0812d4bea7da375c23bbf445\transformed\play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+78            android:name="org.apache.http.legacy"
+78-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\natha\.gradle\caches\transforms-3\012b408f0812d4bea7da375c23bbf445\transformed\play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+79            android:required="false" />
+79-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\natha\.gradle\caches\transforms-3\012b408f0812d4bea7da375c23bbf445\transformed\play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+80
+81        <activity
+81-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\natha\.gradle\caches\transforms-3\a59d207c33ccb0cd1a12696d94e5b9b1\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+82            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+82-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\natha\.gradle\caches\transforms-3\a59d207c33ccb0cd1a12696d94e5b9b1\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+83            android:exported="false"
+83-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\natha\.gradle\caches\transforms-3\a59d207c33ccb0cd1a12696d94e5b9b1\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+84            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+84-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\natha\.gradle\caches\transforms-3\a59d207c33ccb0cd1a12696d94e5b9b1\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+85
+86        <meta-data
+86-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\natha\.gradle\caches\transforms-3\a8ea79c6660237ac78eceac43d4020bb\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+87            android:name="com.google.android.gms.version"
+87-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\natha\.gradle\caches\transforms-3\a8ea79c6660237ac78eceac43d4020bb\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+88            android:value="@integer/google_play_services_version" />
+88-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\natha\.gradle\caches\transforms-3\a8ea79c6660237ac78eceac43d4020bb\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+89
+90        <provider
+90-->[androidx.emoji2:emoji2:1.2.0] C:\Users\natha\.gradle\caches\transforms-3\313e2036b69ef3fe58cee80f0bf898eb\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+91            android:name="androidx.startup.InitializationProvider"
+91-->[androidx.emoji2:emoji2:1.2.0] C:\Users\natha\.gradle\caches\transforms-3\313e2036b69ef3fe58cee80f0bf898eb\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+92            android:authorities="com.learnandroid.ecen403capstone_final.androidx-startup"
+92-->[androidx.emoji2:emoji2:1.2.0] C:\Users\natha\.gradle\caches\transforms-3\313e2036b69ef3fe58cee80f0bf898eb\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+93            android:exported="false" >
+93-->[androidx.emoji2:emoji2:1.2.0] C:\Users\natha\.gradle\caches\transforms-3\313e2036b69ef3fe58cee80f0bf898eb\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+94            <meta-data
+94-->[androidx.emoji2:emoji2:1.2.0] C:\Users\natha\.gradle\caches\transforms-3\313e2036b69ef3fe58cee80f0bf898eb\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+95                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+95-->[androidx.emoji2:emoji2:1.2.0] C:\Users\natha\.gradle\caches\transforms-3\313e2036b69ef3fe58cee80f0bf898eb\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+96                android:value="androidx.startup" />
+96-->[androidx.emoji2:emoji2:1.2.0] C:\Users\natha\.gradle\caches\transforms-3\313e2036b69ef3fe58cee80f0bf898eb\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+97            <meta-data
+97-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\natha\.gradle\caches\transforms-3\4d8e1447f6988bb73d502efad383e64e\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+98                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+98-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\natha\.gradle\caches\transforms-3\4d8e1447f6988bb73d502efad383e64e\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+99                android:value="androidx.startup" />
+99-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\natha\.gradle\caches\transforms-3\4d8e1447f6988bb73d502efad383e64e\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+100        </provider>
+101    </application>
+102
+103</manifest>
