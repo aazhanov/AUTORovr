@@ -3,6 +3,6 @@ ECEN 403 Capstone: Self Navigating, Obstacle Avoiding Rover
 The repository contains all files and code for our subsystems
 
 The subsystems are: 
-Pathfinding and Navigation (Arkadi Zhanov)
-Controls (Nikolai Paderin)
+Pathfinding and Navigation (Arkadi Zhanov),
+Controls (Nikolai Paderin),
 Interface (Nathan Sommer)
