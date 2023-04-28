@@ -282,20 +282,6 @@ lon_end = -96.3250 + lon_step
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ###### INITIAL PARTIAL TESTING STARTS HERE #######
 # # making a matrix
 # MAT_WIDTH = 30
