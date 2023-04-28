@@ -1,6 +1,6 @@
 # AUTORovr
 ECEN 403 Capstone: Self Navigating, Obstacle Avoiding Rover.
-The repository contains all files and code for our subsystems
+The repository contains all files and code for our subsystems.
 
 The subsystems are: 
 Pathfinding and Navigation (Arkadi Zhanov),
