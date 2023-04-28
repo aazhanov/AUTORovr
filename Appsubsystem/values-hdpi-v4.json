@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.learnandroid.ecen403capstone_final.app-mergeDebugResources-33:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\natha\\.gradle\\caches\\transforms-3\\7752fe2256bc4b28a7f5a51d38ae3e9a\\transformed\\appcompat-1.6.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}
