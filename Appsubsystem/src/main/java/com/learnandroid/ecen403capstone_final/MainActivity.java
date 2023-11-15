@@ -1,24 +1,20 @@
-package com.learnandroid.ecen403capstone_final;
-import static android.content.ContentValues.TAG;
+package com.learnandroid.AUTORover;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
     EditText username, password, akey;
     TextView update;
     Button signup, signin;
+    public int port;
     int q = 0;
     Boolean unique = true;
     DBHelper DB;
@@ -69,13 +65,17 @@ public class MainActivity extends AppCompatActivity {
                             //Check to see if it is already in use
                             if (checkactkey == false){
                                 //If not, insert the data in the database
-                                Boolean insert = DB.insertdata(user, pass, actkey, DB.portnum[q]);
+                                Boolean insert = DB.insertdata(user, pass, actkey, DB.portnum[q], DB.ipaddress[q]);
                                 if (insert == true) {
                                     //If it works, tell the user and start the mapsactivity
                                     update.setTextColor(Color.parseColor("#009150"));
                                     update.setText("Registered Successfully");
                                    // Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
+                                    DB.getData(user);
                                     Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+                                    intent.putExtra("com.learnandroid.ecen403capstone_final.ip", DB.ip);
+                                    intent.putExtra("com.learnandroid.ecen403capstone_final.port", DB.port);
+
                                     startActivity(intent);
                                 }} else {
                                 //If the activation key is in the databse, let the user know

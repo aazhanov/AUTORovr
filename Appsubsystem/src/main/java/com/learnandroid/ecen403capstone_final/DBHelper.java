@@ -1,17 +1,22 @@
-package com.learnandroid.ecen403capstone_final;
+package com.learnandroid.AUTORover;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import androidx.annotation.Nullable;
 
 //Creating a db helper class so that we can use the database
 public class DBHelper extends SQLiteOpenHelper {
     public static final String DBNAME = "Login.db";
     //Create the name
     public String[] keys = {"q123w21", "qei3uUs3-r", "a1s2f3gte4"};
-    public int[] portnum = {1111, 1112, 1113};
+    public int[] portnum = {12345, 11111, 11112};
+
+    public String[] ipaddress = {"100.96.1.38", "100.96.1.39", "100.96.1.40"};
+
+    public String ip;
+
+    public String port;
 
     //Create the keys and portnumbers for the activation keys
     public DBHelper(Context context) {
@@ -21,7 +26,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase MyDB) {
-        MyDB.execSQL("create Table userspasskey(username TEXT primary key, password TEXT, actkey TEXT, port INT)");
+        MyDB.execSQL("create Table userspasskey(username TEXT primary key, password TEXT, actkey TEXT, port INT, ipaddress TEXT)");
         //Create a database that has 4 rows for username, password, activationkey, and portnumber
         ContentValues contentValues= new ContentValues();
         //Creating a blank initial set of values
@@ -33,7 +38,7 @@ public class DBHelper extends SQLiteOpenHelper {
         //If used, remove the table if it exists
     }
 
-    public Boolean insertdata(String username, String password, String actkey, int portnum){
+    public Boolean insertdata(String username, String password, String actkey, int portnum, String ipaddress){
         //Created function to insert data into the database
         SQLiteDatabase MyDB = this.getWritableDatabase();
         //Create a writable database
@@ -43,6 +48,7 @@ public class DBHelper extends SQLiteOpenHelper {
         contentValues.put("password", password);
         contentValues.put("actkey", actkey);
         contentValues.put("port", portnum);
+        contentValues.put("ipaddress", ipaddress);
         //Insert all the varibles
         long result = MyDB.insert("userspasskey", null, contentValues);
         //Create varible to see if fails
@@ -85,6 +91,14 @@ public class DBHelper extends SQLiteOpenHelper {
             //If not
             return false;
         }
+    }
+
+    public void getData(String username) {
+        SQLiteDatabase MyDB = this.getReadableDatabase();
+        Cursor cursor = MyDB.rawQuery("Select * from userspasskey where username = ? ", new String[]{username});
+        cursor.moveToFirst();
+        port = cursor.getString(3);
+        ip = cursor.getString(4);
     }
     public Boolean activationkey(String activationkey){
         //Check to see if the activation key exists in the database
