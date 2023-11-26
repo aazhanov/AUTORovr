@@ -107,13 +107,13 @@ def direction_determination():
         if max_dist_sensor == 'L2':
             print('mid hard left')
             direction = 'mid hard left'
-        if max_dist_sensor == 'L1':
+        elif max_dist_sensor == 'L1':
             print('mid left')
             direction = 'mid left'
-        if max_dist_sensor == 'R1':
+        elif max_dist_sensor == 'R1':
             print('mid right')
             direction = 'mid right'
-        if max_dist_sensor == 'R2':
+        elif max_dist_sensor == 'R2':
             print('mid hard right')
             direction = 'mid hard right'
     elif min_dist_sensor == 'L2':
