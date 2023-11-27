@@ -150,8 +150,9 @@ def oa_threshold(threshold_dist=50):
 
 # NAVIGATION PROCEDURES ################################################################################################
 def get_GPS(gps):
+    """Acquire and return GPS lat and long"""
     test = 0
-    if (test == 1):
+    if test == 1:
         print("GPS CALLED, SENDING BACK TEST VALUE")
         return 30.620655, -96.340033
     command = 'AT\r\n'
@@ -202,6 +203,7 @@ def get_GPS(gps):
 
 
 def execute_command(direction, duration, ser):
+    """Movement commands, returns True or False for obstacle avoidance logic"""
     # speed is 120 meters a minute or 2 meters per second
     if direction == "fwd":
         val = int(31)
@@ -218,6 +220,7 @@ def execute_command(direction, duration, ser):
                 ser.write(b'\x00')  # stops motors
                 time.sleep(0.1)  # maybe keep, need to test
                 return True
+            process_time_for_OA = 0.01  # find the process time for OA
             duration -= process_time_for_OA  # subtract the process time for OA to account for time lost during oa_threshold
         ser.write(b'\x00')  # stops motors
         return False
@@ -229,7 +232,7 @@ def execute_command(direction, duration, ser):
         ser.write(command)
         ser.write(command2)
         duration = duration * 3 * 0.0088 * (90 / 106.7) * (90 / 96.6)
-        while (duration >= 0):
+        while duration >= 0:
             time.sleep(0.01)
             duration -= 0.01
 
@@ -240,7 +243,7 @@ def execute_command(direction, duration, ser):
         ser.write(command)
         ser.write(command2)
         duration = duration * 3 * 0.0088 * (90 / 106.7) * (90 / 96.6)
-        while (duration >= 0):
+        while duration >= 0:
             time.sleep(0.01)
             duration -= 0.01
             time.sleep(0.01)
@@ -252,6 +255,7 @@ def execute_command(direction, duration, ser):
 
 
 def calc_turn(curr_angle, ideal_angle):
+    """Returns the difference in calculated angle between current and target position"""
     curr_angle = curr_angle % 360
     ideal_angle = ideal_angle % 360
     angle_diff = ideal_angle - curr_angle
@@ -304,7 +308,7 @@ def node_seeker(ser, gps, datapath):
             print(f"Seeking node:  {i + 1} at {destination_lat} {destination_lon}")
             prev0, prev1 = get_GPS(gps)
 
-            if (execute_command('fwd', 2, ser) == False):  # if obstacle not seen
+            if execute_command('fwd', 2, ser) == False:  # if obstacle not seen
                 # execute_command('fwd', 2, ser)  # 10 sec , obstacle detected, inerrurpt
                 time.sleep(0.5)
                 curr0, curr1 = get_GPS(gps)
@@ -324,10 +328,10 @@ def node_seeker(ser, gps, datapath):
                 turn = calc_turn(self_angle, angle_from_north)
                 print(f"angle shift by {turn} degrees")
 
-                if (turn > 15):
+                if turn > 15:
                     execute_command('right', turn, ser)
                     print(f"adjusting angle, by {turn} degrees right")
-                if (turn < -15):
+                if turn < -15:
                     execute_command('left', -1 * turn, ser)
                     print(f"adjusting angle by {turn * -1} left")
                 print(f"/n")
