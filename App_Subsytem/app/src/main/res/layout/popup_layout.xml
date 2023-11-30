@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="**Make sure you are connected to OpenVPN, as well as the Rover and Pathfinder. Connect Pathfinder to Rover before the App**\n\nReset - Removes the polyline and Destination Marker from app\n\nCreate Route - Sends the GPS and Destination points to Pathfinder to create the best route.\n\nStop - Stops the rover from moving.\n\nGO - Makes the Rover go the destination point. Need to create route first.\n\nThe text on the right gives updates to what is happening.\n\nIf still having issues, reset the app as well as the rover. Make sure to connect Pathfinder first. Email nathansommer@tamu.edu for any more questions or issues you may have." />
+</LinearLayout>

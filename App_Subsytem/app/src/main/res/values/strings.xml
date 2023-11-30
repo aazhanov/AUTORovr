@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">AUTORover</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="LocationDisplay">LocationDisplayhere</string>
+    <string name="Latitude">Latitude</string>
+    <string name="Longitude">Longitude</string>
+    <string name="Plot_Destination">Plot Route</string>
+    <string name="sendtorover">Send to Rover</string>
+    <string name="Distance">Distance</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="Reset">Reset</string>
+    <string name="title_activity_ecen4041st_test">ECEN4041st_test</string>
+    <string name="Kill">Kill</string>
+    <string name="Stop">Stop</string>
+    <string name="send">Send</string>
+    <string name="Go">GO</string>
+</resources>
