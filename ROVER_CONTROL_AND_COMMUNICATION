@@ -1,0 +1,1 @@
+This file contains all the rover side code, including GPS, Obstacle avoidance, rover control, 4G cellular network connection, as well as the server side of the APP and pathfinder
