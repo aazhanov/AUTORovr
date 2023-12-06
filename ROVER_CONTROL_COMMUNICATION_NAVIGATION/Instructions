@@ -1,0 +1,4 @@
+In order to run this start by initializing the Computer3_with_updated_node_navigation.py, that uses the haversine.py and is more or less self contained.
+Make sure that you have serial ports enabled on the raspberry pi, the waveshare hat with a sim card installed and attatched to the Pi, and the antennas and GPS module properly connected.
+The rover will start by first gathering its GPS information, so make sure you are outside and able to get a signal, once that is done, it will wait for connection via the app and pathfinding application.
+Once that is done, control everything the rover does from the APP
